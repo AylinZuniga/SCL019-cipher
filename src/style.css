@@ -1,0 +1,209 @@
+  form{
+    
+    Width: 450px;
+    Height: 500px;
+    position: relative;
+    gap: 30px;
+    top: 100px;
+    left: 60% ;
+    background: rgba(253, 135, 208, 0.8);
+    border: 9.05344px solid #FD87D0;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 27.1603px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }    
+
+.introd{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top:  20%;
+    gap: 30px;
+    
+
+}
+.introdu{
+    display: flex;
+    justify-content: flex-end;
+    Width: 450px;   
+    margin-right:   10%    ;
+    
+}
+
+  .formulario{
+   
+    width: 350px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Righteous', cursive ;
+    
+}
+  .button{
+
+    width: 219px;
+    height: 38px;
+    background: #96F4D8;
+    border: 3px solid #377C68;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Righteous', cursive ;
+    color: #28604F;
+
+  }
+    
+    main{
+    Width: 450px;
+    Height: 600px;
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    top: 120px;
+    left: 60% ;
+    display: none;
+    
+    
+    }
+
+    .btnGroup{
+        position: relative;
+        display: flex;
+        gap: 20px;
+        }
+        
+    body { background: url(fondo.jpg) no-repeat center center fixed;
+       background-size: cover;   
+    }
+        
+    .send{
+    Width: 450px; 
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    
+
+
+    .header {
+        position: relative;
+        width: 55%;
+        height: 10%;
+        background: rgba(138, 106, 207, 0.75);
+        border-radius: 14px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Righteous', cursive;
+        font-size: 300%;
+        text-align: justify;
+        color: #ffffff;
+        -webkit-text-stroke: 4px;
+        -webkit-text-stroke-color: #422979;
+       margin-top: 5%;
+             
+        }
+        
+    .inicialText{ 
+        background: rgba(253, 135, 208, 0.8);
+        border: 9.05344px solid #FD87D0;
+        box-sizing: border-box;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 27.1603px;
+        Width: 450px;
+        Height: 200px;
+        font-family: 'Righteous', cursive;  
+        color: #ffffff;
+        text-align: center;
+        
+         }
+    
+    
+    ::placeholder {
+        color: rgba(253, 135, 208, 0.8);
+        text-align: center;
+        padding-top: 40%;
+        }
+
+
+    .btncipher{
+            
+        width: 219px;
+        height: 38px;
+        background: #96F4D8;
+        border: 3px solid #377C68;
+        box-sizing: border-box;
+        border-radius: 8px;
+        font-family: 'Righteous', cursive ;
+        color: #28604F;
+        }
+        
+    .btnDeciphercipher{
+        width: 219px;
+        height: 38px;
+        background: #96F4D8;
+        border: 3px solid #377C68;
+        box-sizing: border-box;
+        border-radius: 8px;
+        font-family: 'Righteous', cursive;
+        color: #28604F;
+        }
+        
+    .rango{
+        background: #96F4D8;
+        border: 3px solid #377C68;
+        display: grid;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 38px;
+        Width: 450px;
+        font-family: 'Righteous', cursive; 
+        grid-template-columns: 1fr 25px;
+        font-family: 'Righteous', cursive;
+        color: #28604F;
+        text-align: center;
+        }
+    
+    
+    .finalText { 
+        background: rgba(253, 135, 208, 0.8);
+        border: 9.05344px solid #FD87D0;
+        box-sizing: border-box;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 27.1603px;
+        Width: 450px;
+        Height: 200px;
+        font-family: 'Righteous', cursive;  
+        color: #ffffff;
+        text-align: center;
+        }
+
+        
+       
+    .btnSend {
+        width: 200px;
+        height: 45px;
+        background: #96F4D8;
+        border: 3px solid #377C68;
+         box-sizing: border-box;
+        border-radius: 8px;
+        font-family: 'Righteous', cursive;
+        color: #28604F;
+        }
+
+
+        @media screen and (max-width: 480px) { 
+
+       main{
+       Width: 450px;
+       Height: 500px;}
+            
+        }
+
+
+       

@@ -2,13 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Spacial Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+   
+  </head> 
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
+    
+    <header class="header" > SPACE CIPHER </header>
+
+    <form id= "formulario">  
+      
+      <div class="introd">
+      <input  class="formulario" type="text" name="nombres"  id="name" placeholder="NOMBRE DE USUARIO"  >
+      <input   class="formulario" type= "password" id="pass" placeholder="CONTRASEÑA">  
+      </div>
+      
+      <a href="#">OLVIDASTE TU CONTRASEÑA ?</a>
+
+
+      <div class="introdu">
+         <button type="button" class="button"  id='validar' >Login</button>
+      </div>
+
+    
+    </form>
+  
+
+    <main id= "cifrador">
+     
+     <textarea id="mainText" class="inicialText" type="text" placeholder="ESCRIBE TU TEXTO AQUI"></textarea>
+
+     <div class="btnGroup" >
+     <button class='btncipher' id='btncipher' > CIFRAR </button>
+     <button class='btnDeciphercipher' id= 'btnDecipher' > DESCIFRAR </button>
+     </div>
+
+     <div class="rango">
+      <input id="rango" type="range" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
+      <output>10</output>
+     </div>
+
+      <textarea class="finalText" id="finalMesagge" ></textarea>
+
+      <div class="send" > <button class='btnSend'id='btnSend' > ENVIA TU MENSAJE </button></div>
+
+    </main>
+    
+  
+
+
+
+
+    <script src="index.js" type="module" ></script>
   </body>
 </html>
