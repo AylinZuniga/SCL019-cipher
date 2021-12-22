@@ -6,48 +6,67 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
    
   </head> 
   <body>
     
     <header class="header" > SPACE CIPHER </header>
+    <div id="astro"> <img  class="astronautImg" src="astronaut.png" >  </div>
+
+    <ul class="menu">
+      <li><a class="nav" href="#">Home</a></li>
+      <li><a class="nav" href="#">Support</a></li>
+      <li><a class="nav" href="#">Descargar</a></li>
+      <button id="reg" class="signUp" >Regístrate</button>
+    </ul>
+
+    
 
     <form id= "formulario">  
+
+      <div> <img class="spacelImg" src="space.png" >  </div>
       
       <div class="introd">
       <input  class="formulario" type="text" name="nombres"  id="name" placeholder="NOMBRE DE USUARIO"  >
       <input   class="formulario" type= "password" id="pass" placeholder="CONTRASEÑA">  
       </div>
       
-      <a href="#">OLVIDASTE TU CONTRASEÑA ?</a>
-
-
+      <div class="olCon"><a class="ol" href="#">OLVIDASTE TU CONTRASEÑA ?</a></div>
+      
       <div class="introdu">
-         <button type="button" class="button"  id='validar' >Login</button>
+         <button type="button" class="button"  id="validar" >Login</button>
       </div>
-
-    
     </form>
   
+    <div class="container" id="magicText">
+      <div class="word" >INTERCAMBIA MENSAJES SECRETOS <br> CON TU AMIGO ESPACIAL. </div>
+      <div class="word" >SXDOBMKWLSK WOXCKTOC COMBODYC <br> MYX DE KWSQY OCZKMSKV. </div>
+      <div class="word" >INTERCAMBIA MENSAJES SECRETOS <br> CON TU AMIGO ESPACIAL. </div>
+      <div class="word" >SXDOBMKWLSK WOXCKTOC COMBODYC <br> MYX DE KWSQY OCZKMSKV. </div>
+    </div>
+
+    <img id="astroImg" class="astroImg"   src="flyi.png"> 
+    
 
     <main id= "cifrador">
-     
      <textarea id="mainText" class="inicialText" type="text" placeholder="ESCRIBE TU TEXTO AQUI"></textarea>
 
      <div class="btnGroup" >
-     <button class='btncipher' id='btncipher' > CIFRAR </button>
-     <button class='btnDeciphercipher' id= 'btnDecipher' > DESCIFRAR </button>
+     <button class="btncipher" id="btncipher" > CIFRAR </button>
+     <button class="btnDeciphercipher" id= "btnDecipher" > DESCIFRAR </button>
      </div>
 
      <div class="rango">
-      <input id="rango" type="range" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
+      <input id="rango" type="range" value="10" min="1" max="33" oninput="this.nextElementSibling.value = this.value">
       <output>10</output>
      </div>
 
       <textarea class="finalText" id="finalMesagge" ></textarea>
 
-      <div class="send" > <button class='btnSend'id='btnSend' > ENVIA TU MENSAJE </button></div>
+      <div class="send" > <button class="btnSend" id="btnSend" > ENVIA TU MENSAJE </button></div>
 
     </main>
     

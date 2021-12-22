@@ -1,11 +1,11 @@
   form{
     
-    Width: 450px;
-    Height: 500px;
+    Width: 370px;
+    Height: 430px;
     position: relative;
     gap: 30px;
-    top: 100px;
-    left: 60% ;
+    top: 120px;
+    left: 65% ;
     background: rgba(253, 135, 208, 0.8);
     border: 9.05344px solid #FD87D0;
     box-sizing: border-box;
@@ -22,23 +22,153 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top:  20%;
+    position: absolute;
     gap: 30px;
+    top: 42%;
+    
     
 
 }
 .introdu{
     display: flex;
     justify-content: flex-end;
-    Width: 450px;   
-    margin-right:   10%    ;
+    position: absolute;
+    Width: 370px;   
+    margin-right:   25%;
+    margin-top: 97%;
+    
+}
+.olCon{
+   
+    display: flex;
+    justify-content: flex-end;
+    position:absolute;
+    Width: 370px;   
+    margin-right:10%;
+    font-size: 60%;
+    font-family: 'Righteous', cursive;
+    margin-right:   25%;
+    margin-top: 81%;
+    
+}
+.spacelImg{
+    width: 35%;
+    display: flex;
+    position:absolute;
+    top: 5%;
+    left: 32%;  
+}
+.astroImg{
+    width: 27%;
+    position:absolute;
+    top: 37%;
+    left: 8%;  
+    display: none;
+}
+.ol{
+    color:#352ACF ;
+
+}
+.menu{
+    list-style: none;
+    padding: 0%;
+    font-family: 'Righteous', cursive;
+    font-size: 120%;
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    
+}
+.menu li a{
+    text-decoration: none;
+    color:#E2DAFF ;
+    padding: 30px;
     
 }
 
-  .formulario{
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+.signUp{
+    width: 150px;
+    height: 50px;
+    background: rgba(253, 135, 208, 0.25);
+    border: 3px solid #FD87D0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #E2DAFF;
+    font-size:100%;
+    font-family: 'Righteous', cursive;   
+}
+
+.astronautImg{
+    width: 35%;
+    display: flex;
+    position:absolute;
+    top: 35%;
+    left: 13%;  
+}
+
+
+.container{
+
+    /* position:relative; */
+    background: violet;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    flex-direction: column;
+    font-family:'Russo One', sans-serif; 
+    align-items: center; 
+    margin-right: 45%;
+    margin-top: 3%;
+
+}
+
+
+.word{
+    max-width: 50%;
+    letter-spacing: 2px;
+    font-size: 100%;
+    position: absolute;
+    color: white;
+    animation: word 15s infinite ease-in-out;
+}
+
+.word:nth-child(1){
+    animation-delay: -15s;
+}
+.word:nth-child(2){
+    animation-delay: -11s;
+}.word:nth-child(3){
+    animation-delay: -7s;
+}
+.word:nth-child(4){
+    animation-delay: -3s;
+}
+
+
+
+
+
+@keyframes word {
+     0%,5%,100% {
+         filter: blur(0px);
+         opacity: 1;
+     }
+    
+     20%, 80% {
+         filter: blur(35px);
+         opacity: 0;
+     }
+}
+
+
+.formulario{
    
-    width: 350px;
-    height: 38px;
+    width: 280px;
+    height: 35px;
     background: rgba(255, 255, 255, 0.5);
     border: 3px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -48,8 +178,8 @@
 }
   .button{
 
-    width: 219px;
-    height: 38px;
+    width: 125px;
+    height: 29px;
     background: #96F4D8;
     border: 3px solid #377C68;
     box-sizing: border-box;
@@ -60,14 +190,14 @@
   }
     
     main{
-    Width: 450px;
-    Height: 600px;
+    Width: 650px;
+    Height: 500px;
     position: absolute;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-direction: column;
-    top: 120px;
-    left: 60% ;
+    top: 30%;
+    right: 10% ;
     display: none;
     
     
@@ -77,14 +207,29 @@
         position: relative;
         display: flex;
         gap: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         }
         
     body { background: url(fondo.jpg) no-repeat center center fixed;
        background-size: cover;   
+       background-attachment: fixed;
+    }
+
+    body:before{
+        content: "";
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.25;
+
     }
         
     .send{
-    Width: 450px; 
+    Width: 650px; 
     display: flex;
     justify-content: flex-end;
     }
@@ -94,46 +239,47 @@
 
     .header {
         position: relative;
-        width: 55%;
-        height: 10%;
-        background: rgba(138, 106, 207, 0.75);
-        border-radius: 14px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-family: 'Righteous', cursive;
+        width: 48%;
+        height: 9%;
+        text-shadow: 20px 10px 4px rgba(0, 0, 0, 0.5);
+        font-family: 'Russo One', sans-serif;
         font-size: 300%;
         text-align: justify;
         color: #ffffff;
-        -webkit-text-stroke: 4px;
-        -webkit-text-stroke-color: #422979;
-       margin-top: 5%;
+        margin-top: 3%;
+        margin-left: 3%;
              
-        }
+    }
         
     .inicialText{ 
         background: rgba(253, 135, 208, 0.8);
         border: 9.05344px solid #FD87D0;
         box-sizing: border-box;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.65);
         border-radius: 27.1603px;
-        Width: 450px;
-        Height: 200px;
+        Width: 650px;
+        Height: 150px;
         font-family: 'Righteous', cursive;  
         color: #ffffff;
         text-align: center;
+        text-justify: auto;
         
          }
     
     
     ::placeholder {
-        color: rgba(253, 135, 208, 0.8);
+        color: #352ACF;
         text-align: center;
-        padding-top: 40%;
-        }
+        
+    }
+        
+
+   
 
 
     .btncipher{
             
-        width: 219px;
+        width:  320px;
         height: 38px;
         background: #96F4D8;
         border: 3px solid #377C68;
@@ -144,7 +290,7 @@
         }
         
     .btnDeciphercipher{
-        width: 219px;
+        width: 320px;
         height: 38px;
         background: #96F4D8;
         border: 3px solid #377C68;
@@ -161,12 +307,13 @@
         box-sizing: border-box;
         border-radius: 8px;
         height: 38px;
-        Width: 450px;
+        Width: 650px;
         font-family: 'Righteous', cursive; 
         grid-template-columns: 1fr 25px;
         font-family: 'Righteous', cursive;
         color: #28604F;
         text-align: center;
+        margin-bottom: 10px;
         }
     
     
@@ -174,20 +321,21 @@
         background: rgba(253, 135, 208, 0.8);
         border: 9.05344px solid #FD87D0;
         box-sizing: border-box;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.65);
         border-radius: 27.1603px;
-        Width: 450px;
-        Height: 200px;
+        Width: 650px;
+        Height: 150px;
         font-family: 'Righteous', cursive;  
         color: #ffffff;
         text-align: center;
+        margin-bottom: 10px;
         }
 
         
        
     .btnSend {
         width: 200px;
-        height: 45px;
+        height: 35px;
         background: #96F4D8;
         border: 3px solid #377C68;
          box-sizing: border-box;
@@ -201,9 +349,15 @@
 
        main{
        Width: 450px;
-       Height: 500px;}
+       Height: 600px;}
             
         }
 
 
-       
+        .girlImg{
+        Height:450px;
+        position: absolute;
+        display: flex ;
+        top: 120px; 
+        left: 10% ;
+        }
